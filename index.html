@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BREW LOVE APP</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" ></script>
+    
+    <!--    Stylesheet Files    -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--    Javascript files are placed before </body>    -->
+  </head>
+  
+  <body>
+    <!--  Start Hero Section  -->
+    <section class="hero">
+      <header>
+        <div class="row">
+          
+
+          <nav class="top-bar" data-topbar role="navigation">
+            
+            <!--    Start Logo    -->
+            <ul class="title-area">
+              <li class="name">
+                <a href="#" class="logo">
+                  <h1>Brewlove<span class="tld">.com</span></h1>
+                </a>
+            </ul>  
+            <!--    End Logo    -->
+
+
+          </nav>
+        </div>
+      </header>
+
+      <!--    Start Hero Caption    -->
+      <section class="caption">
+        <div class="row">
+          <h1 class="mean_cap">Find your local breweries!</hA>
+          <h2 class="sub_cap"></h2>
+        </div>
+      </section>
+      <!--    End Hero Caption    -->
+
+    </section>
+    <!--  End Hero Section  -->
+    <br>
+    <!-- this is the stuff pertaining to the search bar and buttons. -->
+      <div class="row">
+        <input type="text" id="searchBar" class="searchBar" placeholder="type your zipcode" /><br>
+      </div>
+          <div class="row">><a href="#searchBtn" id="searchButton" class="myButtons"><p class="buttonText">SEARCH!</p></a><br></div>
+              <div class="row"><a href="#jokeBtn" id="jokeButton" class="myButtons"><p class="buttonText">DAD JOKE!</p></a><br></div>
+      <!-- this is the dad joke div. -->
+      <br>
+      <div> <h4 id="dadJokes">hey ima dad joke xd</h4></div>
+      <br>
+      <!-- this is where the map display goes. -->
+      <div id="mapDisplay" class="map">
+        <h4 class="mapPlaceHolderText">Awaiting zipcode input!</h4>
+       </div>
+
+      <!-- this is where all the yelp results will appear. -->
+      <br>
+      <div class="resultsContainer">
+
+        <div class="resultDisplay">
+          <div style="display:inline-block;vertical-align:top"><img class="thumbnail" id="thumbnail0"></div>
+            <div style="display:inline-block;">
+          <a target="_blank" id="listItemLink0"><h4 class="listItem" id="listItem0"></h4></a>
+          <h4 class="listItem" id="result0Address"></h4>
+          <h4 class="listItem" id="result0PhoneNumber"></h4>
+        </div>
+        </div>
+
+        <div class="resultDisplay">
+          <div style="display:inline-block;vertical-align:top"><img class="thumbnail" id="thumbnail1"></div>
+          <div style="display:inline-block;">
+          <a target="_blank" id="listItemLink1"><h4 class="listItem" id="listItem1"></h4></a>
+          <h4 class="listItem" id="result1Address"></h4>
+          <h4 class="listItem" id="result1PhoneNumber"></h4>
+          <h4 class="listItem" id="resultLink1"></h4>
+        </div>
+        </div>
+
+        <div class="resultDisplay">
+          <div style="display:inline-block;vertical-align:top"><img class="thumbnail" id="thumbnail2"></div>
+          <div style="display:inline-block;">
+          <a target="_blank" id="listItemLink2"><h4 class="listItem" id="listItem2"></h4></a>
+          <h4 class="listItem" id="result2Address"></h4>
+          <h4 class="listItem" id="result2PhoneNumber"></h4>
+          <h4 class="listItem" id="resultLink2"></h4>
+        </div>
+        </div>
+
+        <div class="resultDisplay">
+          <div style="display:inline-block;vertical-align:top"><img class="thumbnail" id="thumbnail3"></div>
+          <div style="display:inline-block;">
+          <a target="_blank" id="listItemLink3"><h4 class="listItem" id="listItem3"></h4></a>
+          <h4 class="listItem" id="result3Address"></h4>
+          <h4 class="listItem" id="result3PhoneNumber"></h4>
+          <h4 class="listItem" id="resultLink3"></h4>
+        </div>
+        </div>
+
+        <div class="resultDisplay">
+          <div style="display:inline-block;vertical-align:top"><img class="thumbnail" id="thumbnail4"></div>
+          <div style="display:inline-block;">
+          <a target="_blank" id="listItemLink4"><h4 class="listItem" id="listItem4"></h4></a>
+          <h4 class="listItem" id="result4Address"></h4>
+          <h4 class="listItem" id="result4PhoneNumber"></h4>
+          <h4 class="listItem" id="resultLink4"></h4>
+        </div>
+        </div>
+
+      </div>
+      <!-- and then the footer -->
+      <br>
+        <div class="footerContainer">
+          <footer class="footerText">App created Chinami Iihama, Robert Gaerlan, Sydney Krantz, and Kaden Maguglin.</footer>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    Javascript Files    -->
+    <script type="text/javascript" src="script.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoJpfu65xz3ysT83WdXQB6BrKTBuKLUHc&callback=init"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/touchSwipe.min.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/foundation/foundation.topbar.js"></script>
+    <script type="text/javascript" src="js/carouFredSel.js"></script>
+    <script type="text/javascript" src="js/scrollTo.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/main.js"></script> -->
+
+  </body>
+</html>

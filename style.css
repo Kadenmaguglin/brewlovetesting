@@ -1,0 +1,79 @@
+body{
+    background-color:rgb(34, 34, 34);
+}
+#searchBar{
+text-align: center;
+font-size:25px;
+height:40px;
+border: 2px solid white;
+max-width:60%;
+margin-right:20%;
+margin-left:20%;
+}
+
+#searchButton{
+    display: block;
+    max-width:310px;
+    margin: auto;
+    padding:10px;
+    background-color:crimson;
+    border: 2px solid black;
+}#jokeButton{
+    display: block;
+    max-width:310px;
+    margin:auto;
+    padding:10px;
+    background-color:crimson;
+    border: 2px solid black;
+}.buttonText{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#dadJokes{
+    text-align: center;
+    font-size:30px;
+    background-color: white;
+    border: 2px solid black;
+    width: 80%;
+    margin-right:10%;
+    margin-left: 10%;
+}
+
+#mapDisplay{
+    background-color: white;
+    text-align:center;
+    border: 2px solid black;
+
+}
+
+.resultsContainer{
+    background-color:crimson;
+    width:80%;
+    margin-left: 10%;
+    margin-right:10%;
+    padding-bottom:20px;
+    padding-top:20px;
+}.resultDisplay{
+    margin-bottom:20px;
+    margin-top:20px;
+    margin-left:20px;
+    margin-right:20px;
+    background-color:white;
+}
+
+.footerContainer{
+    color:white;
+    background-color:crimson;
+    text-align:center;
+}
+
+.thumbnail{
+    height:250px;
+    width:250px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
